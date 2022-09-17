@@ -9,7 +9,7 @@ services:
     container_name: web
     ports:
       - "5000:5000"
-    volume:
+    volumes:
       - .:/code
     depends_on:
       - redis
